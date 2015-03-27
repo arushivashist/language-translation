@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140814042324) do
+ActiveRecord::Schema.define(version: 20150326210401) do
 
   create_table "articles", force: true do |t|
     t.text     "english"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20140814042324) do
     t.string   "category"
     t.string   "picture"
     t.integer  "language_id"
+    t.string   "video"
   end
 
   add_index "articles", ["language_id"], name: "index_articles_on_language_id"

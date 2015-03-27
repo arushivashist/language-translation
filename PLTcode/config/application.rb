@@ -1,7 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-
+require 'carrierwave'
 ENV["RAILS_ASSET_ID"] = "" # disable timestamps at end of asset files for offline browsing
 
 # Require the gems listed in Gemfile, including any gems

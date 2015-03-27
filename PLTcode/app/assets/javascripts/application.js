@@ -14,7 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
+//= require jquery-ui
+//= require jquery.maskedinput
 $(function() {
 		  if ($("#articles").length > 0) {
 		      setTimeout(updateArticles, 10000);

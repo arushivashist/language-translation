@@ -45,8 +45,16 @@
   </p>
 
   <p>
-    <%= f.submit %>
+   <%= f.label :Video %>
+   <i><% if @article.video.present? %> ( If you wish to change the video, click on browse and upload the new file.)<% end %></i>
+   <br>
+   <%= video_tag(@article.video_url.to_s, :controls =>true) if @article.video.present? %>
+   <%=f.file_field :video %>
   </p>
+
+ <p>
+    <%= f.submit %>
+ </p>
 <% end %>
 
 

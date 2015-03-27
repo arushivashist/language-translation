@@ -12,6 +12,7 @@
     <th>English Text</th>
     <th>Phonetic Text</th>
     <th>Picture</th>
+    <th>Video</th>
     <th colspan="3"></th>
   </tr>
  
@@ -36,6 +37,10 @@
 <p>
   <strong>Picture:</strong>
   <%= image_tag(article.picture_url, :width => 400) if article.picture.present? %>
+</p>
+<p>
+  <strong>Video:</strong>
+  <%= video_tag(article.video_url, :width => 400) if article.video.present? %>
 </p>
 <p>
   <strong>Phonetic Text:</strong>

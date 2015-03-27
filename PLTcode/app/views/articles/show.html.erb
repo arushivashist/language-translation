@@ -24,6 +24,11 @@
   <strong>Picture:</strong>
   <%= image_tag(@article.picture_url, :width => 400) if @article.picture.present? %>
 </p>
+<p>
+  <strong>Video:</strong>
+  <%= video_tag(@article.video_url.to_s, :controls =>true) if @article.video.present? %>
+</p>
+
 
 <%= link_to 'Back', articles_path %>
 <%= link_to 'Edit', edit_article_path(@article) %>
